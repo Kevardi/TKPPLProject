@@ -12,7 +12,7 @@ html
     article
 
       section
-        h1 Tugas Project
+        h1#uniquefont Tugas Project
         h2 TKPPL
 
       section
@@ -32,20 +32,20 @@ html
 
       section
         h2 CrossWord Puzzle
-        h3 Continue Here
+        img#intropic (src="images/crossword.gif")
+        p#rules Rules Here
         
       section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        h2 Are
+        h3.bullet You Ready?
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+          li#countdown 3
+          li#countdown 2
+          li#countdown 1
 
       section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
+        h2 Game Interface
+        //pre
           code.language-javascript.
             bespoke.from('article', [
               classes(),
@@ -53,7 +53,10 @@ html
               touch(),
               bullets('li, .bullet')
             ]);
-
+        div#player1 Player1 Imager/Character Here
+        div#player2 Player2 Imager/Character Here
+        p Continue Here
+            
       section(data-bespoke-hash='named-route')
         h2 Named Route
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
