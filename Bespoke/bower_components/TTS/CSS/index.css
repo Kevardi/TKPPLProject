@@ -1,9 +1,54 @@
-@font-face
-    font-family: 'GreatVibes-Regular';
+@font-face{
+    font-family: "GreatVibes-Regular";
     font-style: normal;
-    src: url('./GreatVibes-Regular.ttf')
+    src: url("./GreatVibes-Regular.ttf");
+}
 
-#rules
-    font-family: 'Great Vibes', cursive;
-
-#
+@font-face{
+    font-family: "Courgette-Regular";
+    font-style: normal;
+    src: url("./Courgette-Regular.ttf");
+}
+    
+body{
+    width: 100%;
+    background: black;
+    color: blue;
+}   
+section#uniquefont{
+    font-family: "Courgette", cursive;
+} 
+h2#interface{    
+    margin-top: -200px;
+    color: dodgerblue;
+}
+#floatleft{
+    text-decoration: underline;
+    display: block;
+    float: left;
+    width: 25%;
+    margin-top: -50px;
+    margin-left: -350px;
+}
+#playerpic1{
+    display: block;
+    float: left;
+    margin-left: -450px;
+    width: 100px;
+    height: 150px;
+}
+#floatright{
+    text-decoration: underline;
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 550px;
+    margin-top: -180px;
+}
+#playerpic2{
+    display: block;
+    float: left;
+    margin-left: 450px;
+    width: 100px;
+    height: 150px;
+}
