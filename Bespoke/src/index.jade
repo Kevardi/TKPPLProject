@@ -6,13 +6,15 @@ html
     title TKPPL|Teknik Kolaborasi Pengembangan Perangkat Lunak
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Courgette')
+    
 
   body
 
     article
 
-      section
-        h1#uniquefont Tugas Project
+      section#uniquefont
+        h1 Tugas Project
         h2 TKPPL
 
       section
@@ -24,7 +26,7 @@ html
           li Billy - 15.111.2921
 
       section
-        h2.bullet Peraturan Teka-Teki Sulit
+        h2.bullet Peraturan Teka-Teki Sulit :
         ul
           li Jika benar mendapat nilai 100
           li Jika salah tidak mendapat nilai
@@ -33,8 +35,7 @@ html
 
       section
         h2 TTS Sate (Inheritance dari TTS Lontong)
-        img#intropic(src="images/crossword.gif")
-        p#rules Rules Here
+        img#intropic(src="images/crossword.gif")        
         
       section
         h2 Are
@@ -45,19 +46,16 @@ html
           li#countdown 1
 
       section
-        h2 Game Interface
-        //pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-        div#player1 Player1 Imager/Character Here
-        div#player2 Player2 Imager/Character Here
-        p Continue Here
-            
+        h2#interface Game Interface 
+        p#floatleft Player1
+        img#playerpic1(src="images/Ply1.png")
+        
+        p#floatright Player2
+        img#playerpic2(src="images/Ply2.jpg")
+        p Score Board :
+        p#score1 Player 1 :
+        p#score2 Player 2 :
+        
       section(data-bespoke-hash='named-route')
         h2 Named Route
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
