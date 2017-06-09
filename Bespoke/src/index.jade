@@ -45,17 +45,41 @@ html
           li#countdown 2
           li#countdown 1
 
-      section
-        h2#interface Game Interface 
-        p#floatleft Player1
-        img#playerpic1(src="images/Ply1.png")
         
-        p#floatright Player2
-        img#playerpic2(src="images/Ply2.jpg")
-        p Score Board :
-        p#score1 Player 1 :
-        p#score2 Player 2 :
-        
+      section   
+        div.container
+            h1#intface Game Interface
+            div.row
+                div.col
+                    h2#ply1 Player 1
+                div.col
+                    h3#score1 Score
+                div.col
+                    figure
+                    img.pic(src="images/Ply1.png")
+                    
+                div.col
+                    form
+                        input#input1(type="text")
+                      
+            div.row2
+                div.col2
+                    div.soal Continue Here
+                      
+            div.row
+                div.col
+                    h2#ply2 Player 2
+                div.col
+                    h3#score2 Score
+                div.col
+                    figure
+                    img.pic(src="images/Ply2.jpg")
+                    
+                div.col
+                    form
+                        input#input2(type="text")
+                        
+                        
       section(data-bespoke-hash='named-route')
         h2 Named Route
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
