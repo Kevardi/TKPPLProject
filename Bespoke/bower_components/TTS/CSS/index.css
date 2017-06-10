@@ -35,6 +35,16 @@ section#uniquefont{
     width: 240px;
     float: left;
     color: black;
+    margin-bottom: 5px;
+}
+#unique{
+    margin-left: 80px;
+}
+.row3{
+    width: 100px;
+    float: left;
+    margin: 3px;
+    margin-bottom: 2px;
 }
 #intface{
     font-size: 25px;
@@ -69,21 +79,41 @@ section#uniquefont{
     margin: 5px 0px;
     border: 1px solid black;
 }
-
-.button-ok,
-.button-oneword,
-.button-twoword,
-.button-nyerah 
-{
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.soal{
+    border: 1px solid black;
+    height: 150px;
 }
-
-.button-ok { background: color(green); }
-
-.button-oneword { background: color(violet); }
-
-.button-twoword { background: color(orange); }
-
-.button-nyerah { background: color(maroon); }
+.box{
+    
+}
+table{
+    border-collapse: collapse;
+    height: 20px;
+    margin: 5px -100px 5px 0px;
+}
+td{
+    border: 1px solid black; 
+    width: 20px;
+    font-size: 15px;
+}
+#help1{
+    color: red;
+    font-size: 10px;
+    padding: 3px;
+}
+#help1:hover{
+    background-color: black;
+    color: white;
+}
+#help2{
+    color: red;
+    font-size: 10px;
+    padding: 3px;
+}
+#help2:hover{
+    background-color: black;
+    color: white;
+}
+.timer{
+    border: 1px solid black;
+}
