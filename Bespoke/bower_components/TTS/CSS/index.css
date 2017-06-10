@@ -9,14 +9,19 @@
     font-style: normal;
     src: url("./Courgette-Regular.ttf");
 }
+/* Body */
 body{
     width: 100%;
-    background: black;
+    background: darkblue;
     color: blue;
 }   
+
+/* Halaman Awal */
 section#uniquefont{
     font-family: "Courgette", cursive;
 } 
+
+/* */
 .row{
     width: 150px;
     float: left;
@@ -36,6 +41,15 @@ section#uniquefont{
     float: left;
     color: black;
     margin-bottom: 5px;
+}
+
+.logo img{
+    display: block;
+    transition: all 0.7 ease;
+    
+}
+.logo img:hover{
+    transform: scaleX(-1);
 }
 #unique{
     margin-left: 80px;
@@ -102,7 +116,7 @@ td{
     padding: 3px;
 }
 #help1:hover{
-    background-color: black;
+    background-color: aqua;
     color: white;
 }
 #help2{
@@ -111,7 +125,7 @@ td{
     padding: 3px;
 }
 #help2:hover{
-    background-color: black;
+    background-color: aqua;
     color: white;
 }
 .timer{
