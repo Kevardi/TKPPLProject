@@ -83,8 +83,8 @@ html
                             input#help2(type="button", value="Bantuan 2 huruf")
                 div.col2        
                     div.icon#result Icon Here
-                div.col2
-                    div.timer#timer Timer Here
+                div.col2#unique2
+                    div.timer 30
                       
             div.row
                 div.col
@@ -100,26 +100,36 @@ html
                         input#input2(type="text")
                         
                         
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+      section
+        div.container
+            h1#intface Final Score :
+            div.row
+                div.col
+                    h2#ply1 Player 1          
+                div.col
+                    figure#figureP1
+                    img.pic(src="images/Ply1.png")
+                div.col
+                    h3#score1 Score   
+                      
+            div.row
+                div.col
+                    h4 Winner :
+                    div.win Player1 / Player2
+                      
+            div.row
+                div.col
+                    h2#ply2 Player 2         
+                div.col
+                    figure#figureP2
+                    img.pic(src="images/Ply2.jpg")
+                div.col
+                    h3#score2 Score
+                              
 
       section
-        h2.bullet Just the beginning...
-        br
+        h2.bullet ThankYou~
         ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-
+            li Have a nice day :)
+            
     script(src='build/build.js')

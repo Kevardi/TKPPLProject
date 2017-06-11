@@ -54,6 +54,11 @@ section#uniquefont{
 #unique{
     margin-left: 80px;
 }
+#unique2{
+    width: 50px;
+    margin-left: 38%;
+    text-align: center;
+}
 .row3{
     width: 100px;
     float: left;
@@ -66,18 +71,22 @@ section#uniquefont{
     color: dodgerblue;
 }
 .pic{
-    width: 140px;
-    height: 150px;
-    margin: none;
+    width: 80px;
+    height: 100px;
     padding: none;
 }
 #ply1{
     font-size: 15px;
     margin: auto;
+    margin-bottom: 10px;
+}
+#figureP1{
+    
 }
 #ply2{
     font-size: 15px;
     margin: auto;
+    margin-bottom: 10px;
 }
 #input1{
     width: 140px;
@@ -114,10 +123,11 @@ td{
     color: red;
     font-size: 10px;
     padding: 3px;
+    margin-left: 25px;
 }
 #help1:hover{
     background-color: aqua;
-    color: white;
+    color: blue;
 }
 #help2{
     color: red;
@@ -126,8 +136,16 @@ td{
 }
 #help2:hover{
     background-color: aqua;
-    color: white;
+    color: blue;
 }
 .timer{
     border: 1px solid black;
+}
+h4{
+    color: darkblue;
+    font-style: italic;
+}
+.win{
+    color: chartreuse;
+    font-style: bold;
 }
