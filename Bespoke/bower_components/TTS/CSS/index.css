@@ -16,6 +16,11 @@ body{
     color: blue;
 }   
 
+div.container
+{
+	margin-top: 5%;
+}
+
 /* Halaman Awal */
 section#uniquefont{
     font-family: "Courgette", cursive;
@@ -26,7 +31,9 @@ section#uniquefont{
     width: 150px;
     float: left;
 }
-.col{
+.col,
+#figure1,
+#figure2{
     width: 140px;
     float: left;
     color: black;
@@ -103,9 +110,36 @@ section#uniquefont{
     border: 1px solid black;
 }
 .soal{
-    border: 1px solid black;
     height: 150px;
 }
+
+.soal table{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.soal table tr td{
+    width: 22%;
+    text-align: center;
+    padding: 9px;
+}
+
+.soalAktif{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.soalAktif:hover{
+    background-color: skyblue;
+}
+
+.soal p
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .box{
     
 }
@@ -119,6 +153,20 @@ td{
     width: 20px;
     font-size: 15px;
 }
+
+table.jawaban{
+    width: 100%;    
+    text-align: center;
+}
+
+table.jawaban tr td.huruf{
+    display: inline-block;
+    border: 1px solid black;
+    width: 9%;
+    height: 35px;
+    padding-top: 5px;
+}
+
 #help1{
     color: red;
     font-size: 10px;
@@ -138,9 +186,37 @@ td{
     background-color: aqua;
     color: blue;
 }
-.timer{
-    border: 1px solid black;
+
+div.icon
+{
+	width: 25%;
+	padding: 0;
+	margin: 0 auto;
+	height: 40px;
 }
+
+div.icon img
+{
+	width: 100%;
+	padding: 0;
+	height: 40px;
+}
+
+.box2{
+    border: 1px solid black;
+    height: 40px;
+    padding-top: 8px;
+    font-size: 1.5em;
+	width : 100%;
+}
+
+#timer{
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 h4{
     color: darkblue;
     font-style: italic;

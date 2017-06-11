@@ -8,8 +8,11 @@ html
     link(rel='stylesheet', type='text/css', href='build/build.css')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Courgette')
     
+    script(src='./Scripts/SoalJawaban.js')
+    script(src='./Scripts/Timer.js')
+    script(src='./Scripts/GamePlay.js')
 
-  body
+  body(onload = "GameStart()")
 
     article
 
@@ -48,8 +51,8 @@ html
           li#countdown 2
           li#countdown 1
 
-        
-      section   
+
+      section
         div.container
             h1#intface Game Interface
             div.row
@@ -57,47 +60,40 @@ html
                     h2#ply1 Player 1
                 div.col
                     h3#score1 Score
-                div.col
-                    figure#figureP1
+                div.col#figureP1
+                    figure
                     img.pic(src="images/Ply1.png")
                     
                 div.col
                     form
-                        input#input1(type="text")
-                      
+                        input#input1(type="text" autocomplete = "off")
+                   
             div.row2
                 div.col2
-                    div.soal Question Here
-                div.col2#unique
-                    div.box
-                        table
-                            tr
-                                td a
-                                td &nbsp
-                                td &nbsp
+                    div.soal#soal
+                div.col2
+                    div.box#box
                 div.row3#help
-                        form
-                            input#help1(type="button", value="Bantuan 1 huruf")
-                    div.row3
-                       form     
-                            input#help2(type="button", value="Bantuan 2 huruf")
-                div.col2        
-                    div.icon#result Icon Here
+                    form
+                        input#help1(type="button", value="Bantuan 1 huruf")
+                        input#help2(type="button", value="Bantuan 2 huruf")
+                div.col2
+                    div.icon#result
                 div.col2#unique2
-                    div.timer 30
+                    div.box2#box2
                       
             div.row
                 div.col
                     h2#ply2 Player 2
                 div.col
                     h3#score2 Score
-                div.col
-                    figure#figureP2
+                div.col#figureP2
+                    figure
                     img.pic(src="images/Ply2.jpg")
                     
                 div.col
                     form
-                        input#input2(type="text")
+                        input#input2(type="text" autocomplete = "off")
                         
                         
       section
@@ -116,7 +112,7 @@ html
                 div.col
                     h4 Winner :
                     div.win Player1 / Player2
-                      
+            
             div.row
                 div.col
                     h2#ply2 Player 2         
