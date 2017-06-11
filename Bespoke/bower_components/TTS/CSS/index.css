@@ -26,7 +26,16 @@ section#uniquefont{
     font-family: "Courgette", cursive;
 } 
 
-/* */
+/* Gambar KKS & Efek Sederhana*/
+.logo img{
+    display: block;
+    transition: all 0.7 ease;
+    
+}
+.logo img:hover{
+    transform: scaleX(-1);
+}
+/* Main Interface */
 .row{
     width: 150px;
     float: left;
@@ -50,14 +59,6 @@ section#uniquefont{
     margin-bottom: 5px;
 }
 
-.logo img{
-    display: block;
-    transition: all 0.7 ease;
-    
-}
-.logo img:hover{
-    transform: scaleX(-1);
-}
 #unique{
     margin-left: 80px;
 }
@@ -67,7 +68,7 @@ section#uniquefont{
     text-align: center;
 }
 .row3{
-    width: 100px;
+    width: 200px;
     float: left;
     margin: 3px;
     margin-bottom: 2px;
@@ -186,7 +187,11 @@ table.jawaban tr td.huruf{
     background-color: aqua;
     color: blue;
 }
-
+#back{
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
 div.icon
 {
 	width: 25%;
