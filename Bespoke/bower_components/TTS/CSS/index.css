@@ -24,7 +24,19 @@ div.container
 /* Halaman Awal */
 section#uniquefont{
     font-family: "Courgette", cursive;
-} 
+}
+h2.bullet{
+    color:black;
+}
+.tiga{
+    color:red;
+}
+.dua{
+    color:yellow;
+}
+.satu{
+    color: green;
+}
 
 /* Gambar KKS & Efek Sederhana*/
 .logo img{
