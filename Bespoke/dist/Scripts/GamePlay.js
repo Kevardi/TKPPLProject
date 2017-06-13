@@ -17,6 +17,11 @@ function TampilGame()
     HilangTextP2();
     HilangResult();
     HilangTimer();
+    HilangBack();
+    HilangDivKotakJawab();
+    HilangWarnaP1();
+    HilangWarnaP2();
+    document.getElementById("result").innerHTML = "";
 }
 
 function GamePlay(x)
@@ -112,6 +117,8 @@ function TampilKotakJawaban()
     text += "</tr></table>";
 
     document.getElementById("box").innerHTML = text;
+
+    TampilDivKotakJawab();
 }
 
 function TampilSoal()
@@ -127,6 +134,8 @@ function TampilJawaban()
 
     for (var i = 0; i < kumpulanSoalJawaban[arrSoal[no]][1].length; i++)
         text += "<td class = 'huruf" + i + "'>" + kumpulanSoalJawaban[arrSoal[no]][1][i]+"</td>";
+
+    text += "</tr></table>";
 
     document.getElementById("box").innerHTML = text;
 }
@@ -148,7 +157,7 @@ function Jawab(e, jawaban)
 function TampilHasilJawaban(jawaban)
 {
     if (CekJawaban(jawaban)) {
-        clearTimer();
+        ClearTimer();
         document.getElementById("result").innerHTML = "<img src='./images/correctLogo.png'>";
 
         HilangTimer();
@@ -161,6 +170,8 @@ function TampilHasilJawaban(jawaban)
         HilangBantuan();
         TambahScore();
         TampilScore();
+        TampilJawaban();
+        TampilBack();
 
         if (player === playerSementara)
             UbahPlayer();
@@ -174,6 +185,7 @@ function TampilHasilJawaban(jawaban)
         else
         {
             TampilJawaban();
+            TampilBack();
         }
     }
 }
@@ -235,6 +247,7 @@ function TampilTextP1()
 
 function HilangTextP1()
 {
+    document.getElementById("input1").value = "";
     document.getElementById("input1").style.visibility = "hidden";
 }
 
@@ -245,6 +258,7 @@ function TampilTextP2()
 
 function HilangTextP2()
 {
+    document.getElementById("input2").value = "";
     document.getElementById("input2").style.visibility = "hidden";
 }
 
@@ -277,17 +291,52 @@ function HilangResult()
 {
     document.getElementById("result").style.visibility = "hidden";
 }
+
+function HilangTimer() {
+    document.getElementById("box2").style.visibility = "hidden";
+}
+
+function TampilBack()
+{
+    document.getElementById("back").style.visibility = "visible";
+}
+
+function HilangBack()
+{
+    document.getElementById("back").style.visibility = "hidden";
+}
+
+function TampilDivKotakJawab()
+{
+    document.getElementById("box").style.visibility = "visible";
+}
+
+function HilangDivKotakJawab()
+{
+    document.getElementById("box").style.visibility = "hidden";
+}
+
+function HilangWarnaP1()
+{
+    document.getElementById("figureP1").style.backgroundColor = "transparent";
+}
+
+function HilangWarnaP2()
+{
+    document.getElementById("figureP2").style.backgroundColor = "transparent";
+}
+
 function OnPlaying()
 {
     if (player === 1)
     {
         document.getElementById("figureP1").style.backgroundColor = "lightblue";
-        document.getElementById("figureP2").style.backgroundColor = "transparent";
+        HilangWarnaP2();
     }
     else
     {
         document.getElementById("figureP2").style.backgroundColor = "lightblue";
-        document.getElementById("figureP1").style.backgroundColor = "transparent";
+        HilangWarnaP1();
     }
 }
 
@@ -295,8 +344,19 @@ function Bantuan1Huruf()
 {
     var y = Math.floor(Math.random() * (kumpulanSoalJawaban[arrSoal[no]][1].length - 1));
 
-    document.getElementById("huruf" + y).innerHTML = kumpulanSoalJawaban[arrSoal[no]][1][y];
+    var text = "<table class = 'jawaban'> <tr>";
 
+    for (var i = 0; i < kumpulanSoalJawaban[arrSoal[no]][1].length; i++) {
+        if (i === y)
+            text += "<td class = 'huruf" + i + "'>" + kumpulanSoalJawaban[arrSoal[no]][1][i] + "</td>";
+        else
+          text += "<td class = 'huruf" + i + "'>" + "</td>";
+    }
+
+    text += "</tr></table>";
+    document.getElementById("box").innerHTML = text;
+
+    HilangBantuan();
     bantuan1 = true;
 }
 
@@ -307,10 +367,22 @@ function Bantuan2Huruf()
 
     while (x === y)
         x = Math.floor(Math.random() * (kumpulanSoalJawaban[arrSoal[no]][1].length - 1));
+    
 
-    document.getElementById("huruf" + y).innerHTML = kumpulanSoalJawaban[arrSoal[no]][1][y];
-    document.getElementById("huruf" + x).innerHTML = kumpulanSoalJawaban[arrSoal[no]][1][x];
+    var text = "<table class = 'jawaban'> <tr>";
 
+    for (var i = 0; i < kumpulanSoalJawaban[arrSoal[no]][1].length; i++)
+    {
+        if (i === x || i === y)
+            text += "<td class = 'huruf" + i + "'>" + kumpulanSoalJawaban[arrSoal[no]][1][i] + "</td>";
+        else
+          text += "<td class = 'huruf" + i + "'>" + "</td>";
+    }
+
+    text += "</tr></table>";
+    document.getElementById("box").innerHTML = text;
+
+    HilangBantuan();
     bantuan2 = true;
 }
 

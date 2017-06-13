@@ -199,11 +199,23 @@ table.jawaban tr td.huruf{
     background-color: aqua;
     color: blue;
 }
+
+div.pilihSoal
+{
+	margin-bottom: 3%;
+}
+
 #back{
-    width: 100px;
+    width: 80px;
     margin-left: 5px;
     margin-top: 10px;
 }
+
+#back:hover{
+    background-color: lightblue;
+    color: red;
+}
+
 div.icon
 {
 	width: 25%;

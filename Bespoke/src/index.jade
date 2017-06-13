@@ -68,7 +68,7 @@ html
                     
                 div.col
                     form
-                        input#input1(type="text" autocomplete = "off")
+                        input#input1(type="text" autocomplete = "off" onkeypress = "Jawab(event,document.getElementById('input1').value.toString().toUpperCase())")
                    
             div.row2
                 div.col2
@@ -76,11 +76,10 @@ html
                 div.col2
                     div.box#box
                 div.row3#help
-                    form
-                        input#help1(type="button", value="Bantuan 1 huruf")
-                        input#help2(type="button", value="Bantuan 2 huruf")
-                    div
-                        input#back(type="button", value="Kembali")
+                        input#help1(type="button", value="Bantuan 1 huruf" onclick='Bantuan1Huruf()')
+                        input#help2(type="button", value="Bantuan 2 huruf" onclick='Bantuan2Huruf()')
+                    div.pilihSoal
+                        input#back(type="button", value="Pilih Soal" onclick="TampilGame()")
                 div.col2
                     div.icon#result
                 div.col2#unique2
@@ -97,8 +96,7 @@ html
                     img.pic(src="images/p2.png")
                     
                 div.col
-                    form
-                        input#input2(type="text" autocomplete = "off")
+                        input#input2(type="text" autocomplete = "off" onkeypress = "Jawab(event,document.getElementById('input2').value.toString().toUpperCase())")
                         
                         
       section

@@ -9,7 +9,7 @@
     ["Anda datang terlambat maka anda", "SELAMAT"],
     ["Perbedaan kambing dengan domba", "DIKIT"],
     ["Kita melihat bintang di", "PUNDAK"],
-    ["Datang ga di udang pulang ga Izin", "BRENGSEK"],
+    ["Datang ga di undang pulang ga Izin", "BRENGSEK"],
     ["Orang yang jarang pergi kemana-mana disebut", "KIPER"],
     ["Apakah yang dilakukan orang ketika sakit", "PULANG"],
     ["Bisa ditarik tapi tidak bisa dilihat", "KUPING"],
