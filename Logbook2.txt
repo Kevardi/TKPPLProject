@@ -1,0 +1,5 @@
+Tampilan Permainan
+	Rabu, 7/6/17 -> Merancang tampilan awal pada saat permainan
+
+Ending View
+	Kamis, 8/6/17 -> Memberikan penutup akhir dari permainan.
