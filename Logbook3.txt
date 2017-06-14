@@ -1,0 +1,8 @@
+Sabtu, 10-6-2017 => timer untuk menjawab
+- membuat perhitungan waktu mundur menggunakan javascript
+
+Minggu, 11-6-2017 => update untuk timer
+- pengupdatean agar timer dapat bekerja lebih baik dan menyesuaikan dengan inputan misalkan jika telah menjawab maka akan diset kembali
+
+Senin, 12-6-2017 => Tampilan Hasil Akhir untuk skor
+- tampilan hasil akhir dengan menggunakan javascript untuk menjumlahkan nilai yang didapat
