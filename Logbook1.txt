@@ -1,0 +1,8 @@
+Opening view
+	Minggu, 4/6/17 -> Berdiskusi permasalahan tampilan awal, Interface yang akan dipresentasikan.
+
+Data Quiz
+	Senin, 5/6/17 -> Membahas dan mencari topik - topik yang akan di pergunakan pada soal quiz.
+
+Tampilan aturan
+	Selasa, 6/6/17 -> Memberikan gambaran awal penampilan data aturan.
