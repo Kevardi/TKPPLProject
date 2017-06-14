@@ -1,5 +1,5 @@
 ﻿var soalAktif = [], arrSoal = [];
-var no, score1 = 0, score2 = 0, player = 1, playerSementara, bantuan1 = false, bantuan2 = false, timer;
+var no, score1 = 0, score2 = 0, player = 1, playerSementara, bantuan1, bantuan2, timer;
 
 function GameStart()
 {
@@ -28,6 +28,8 @@ function GamePlay(x)
 {
     no = x;
     soalAktif[no] = 0;
+    bantuan1 = false;
+    bantuan2 = false;
 
     TampilSoal();
     TampilKotakJawaban();
@@ -136,6 +138,11 @@ function TampilJawaban()
         text += "<td class = 'huruf" + i + "'>" + kumpulanSoalJawaban[arrSoal[no]][1][i]+"</td>";
 
     text += "</tr></table>";
+
+    if (player === 1)
+        HilangTextP1();
+    else
+        HilangTextP2();
 
     document.getElementById("box").innerHTML = text;
 }
@@ -389,5 +396,21 @@ function Bantuan2Huruf()
 function TampilScore()
 {
     document.getElementById("score1").innerHTML = score1;
+    document.getElementById("finalscore1").innerHTML = score1;
     document.getElementById("score2").innerHTML = score2;
+    document.getElementById("finalscore2").innerHTML = score2;
+    Winner();
+}
+
+function Winner()
+{
+    var text;
+    if (score1 > score2)
+        text = "Player1";
+    else if (score2 > score1)
+        text = "Player2";
+    else
+        text = "Player1 & Player2"
+
+    document.getElementById("winner").innerHTML = "<p>" + text + " </p > ";
 }

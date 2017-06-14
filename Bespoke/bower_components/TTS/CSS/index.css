@@ -114,11 +114,13 @@ h2.bullet{
 #input2{
     width: 140px;
 }
-#score1{
+#score1,
+#finalscore1{
     margin: 5px 0px;
     border: 1px solid black;
 }
-#score2{
+#score2,
+#finalscore2{
     margin: 5px 0px;
     border: 1px solid black;
 }
@@ -253,4 +255,13 @@ h4{
 .win{
     color: chartreuse;
     font-style: bold;
+}
+
+.win p
+{
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
 }
