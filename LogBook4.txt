@@ -1,10 +1,41 @@
 Scrum Master = Kevin [15.111.2271]
 
-Topik : GamePlay + Hasil Akhir
+ - Selasa, 13/6/17 -> 
+	1. Apa yang dikerjakan Kemarin
+		A. 
+		B. 
 
-   Selasa, 13/6/17 -> Terjadi Masalah (error) dalam penerapan ke jade, karena di jade masih ada yang kurang dengan
-			 tampilan.
-   Rabu, 14/6/17 -> Pengupdatan terhadap tampilan gameplay sudah dilakukan, penerapan gameplay berjalan dengan lancar, 
-			namun masih ada error yang tidak didapatkan dalam debug yang dilakukan.
-   Kamis, 15/6/17 -> Hasil akhir sudah diterapkan javascript dan berjalan dengan lancar namun error pada gameplay saat
-			pemilihan soal belum didapatkan apa yang membuatnya error.
+	2. Apa yang dikerjakan hari ini
+		A. Gameplay dengan javascript By Kevin
+		B. Ending View By Erwin, Julius, Kevin
+		C. Css Ending View By Julius, Erwin
+		D. Penambahan Class di Css By Billy
+
+	3. Masalah Yang Dihadapi
+		A. Tejadi Error dalam penerapan Js ke dalam jade
+		B. Sudah dilakukan debug terhadap error namun belum di dapatkan errornya
+
+ - Rabu, 14/6/17 -> 
+	1. Apa yang dikerjakan Kemarin
+		A. Gameplay dengan javascript By Kevin
+		B. Ending View By Erwin, Julius, Kevin
+		C. Css Ending View By Julius, Erwin
+		D. Penambahan Class di Css By Billy
+
+	2. Apa yang dikerjakan hari ini
+		A. Tampilan Hasil Akhir dengan javascript By Kevin
+
+	3. Masalah Yang Dihadapi
+		A. Semua Berjalan Lancar
+		B. Belum ditemukan error yang terjadi pada penerapan Gameplay.js ke dalam index.jade
+
+ - Kamis, 15/6/17 -> 
+	1. Apa yang dikerjakan Kemarin
+		A. Tampilan Hasil Akhir dengan javascript By Kevin
+
+	2. Apa yang dikerjakan hari ini
+		A. Project Sudah Selesai
+
+	3. Masalah Yang Dihadapi
+		A. Semua Berjalan Lancar
+		B. Belum ditemukan juga error yang terjadi pada penerapan Gameplay.js ke dalam index.jade
