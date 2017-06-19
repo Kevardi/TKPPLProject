@@ -1,8 +1,25 @@
-Opening view
-	Minggu, 4/6/17 -> Berdiskusi permasalahan tampilan awal, Interface yang akan dipresentasikan.
+Scrum Master : Julius Stefen
 
-Data Quiz
-	Senin, 5/6/17 -> Membahas dan mencari topik - topik yang akan di pergunakan pada soal quiz.
+Minggu, 4/6/17:
+	1. Kemarin mengerjakan apa?
+	-> Membahas persiapan software yang diperlukan untuk mengerjakan project.
+	2. Apa yang akan dikerjakan hari ini?
+	-> Mengerjakan Opening View dengan menggunakan editor dalam bentuk jade file.
+	3. Ada masalah dalam pengerjaan tugas?
+	-> Terdapat beberapa masalah yakni: mengedit masih rancu (jade / html) masih kurang mengerti, Akan tetapi setelah berdiskusi dengan kelompok dapat kesimpulannya.
 
-Tampilan aturan
-	Selasa, 6/6/17 -> Memberikan gambaran awal penampilan data aturan.
+Senin, 5/6/17:
+	1. Kemarin mengerjakan apa?
+	-> Membuat rancangan Opening View pada file jade
+	2. Apa yang akan dikerjakan hari ini?
+	-> mempersiapkan Data - data yang akan digunakan untuk Soal Quiz (Data Quiz), serta menedit style untuk opening view dengan file css.
+	3. Ada masalah dalam pengerjaan tugas?
+	-> Bingung pada awal tapi terinspirasi dan menemukan jalan keluar permasalahan tersebut.
+
+Selasa, 6/6/17:
+	1. Kemarin mengerjakan apa?
+	-> mempersiapkan data quiz, Stylus.
+	2. Apa yang akan dikerjakan hari ini?
+	-> Membuat rancangan awal tampilan aturan (Rules Slide) + css.
+	3. Ada masalah dalam pengerjaan tugas?
+	-> pemilihan Score untuk setiap bantuan, terdapat perbedaan untuk setiap bantuan. Sehingga butuh beberapa cara untuk memberikan score.
